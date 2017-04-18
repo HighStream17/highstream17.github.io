@@ -1,34 +1,77 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
 title: Your awesome title
+lang: en
+
+# Metric
+shortname: HighStream’2017
+fullname: High-Performance Data Stream Mining Workshop
+subline: co-located with IEEE International Conference on Data Mining ICDM 2017
+where: New Orleans, USA
+when: November 18 - November 21, 2017
+
+# Description
+description: [
+  "Learning from data streams have emerged as one of the most vital topic in contemporary machine learning and data stream mining. They encompass several challenges for modern intelligent systems: potentially unbounded volume of data, instances arriving at high speed in varying intervals, changing and evolving decision space, difficulties with access to ground truth, as well as need for managing heterogeneous forms of information. Volume and velocity are difficult tasks to handle on their own, yet they need to be considered from a perspective of non-stationary problems affected with a phenomenon known as concept drift. This problem has been thoroughly studied in the last decade with a specific focus on classification tasks. However, the research community has started to address this problem within other contexts such as data preprocessing, regression, multi-label classification, association rule mining, imbalanced learning, graph and xml mining, social and mobile networks, as well as novelty detection.  It is now recognized that imbalanced domains are a broader and important problem posing relevant challenges for both supervised and unsupervised learning tasks, with handling various embedded difficulties in an increasing number of real world applications. ",
+  "Tackling the issues raised by data stream mining is of high importance to people from both academia and industry. For researchers, these challenges offer an exciting option to develop adapting, evolving and efficient learning methods that will be able to handle such difficult cases. For industry, many of real problems to be faced actually arrive in form of streams, thus such methods are vital for tackling these tasks. They require methods that enable a more preemptive, real-time action in an increasingly fast-paced world and are able to constantly update and evolve knowledge and models in accordance with the current state of data. Additionally, with the ever-increasing scale and complexity of these problems, we need high-performance computing environments (clusters, cloud computing, GPUs) and fast, incremental, ideally single-pass algorithms to offer highest possible predictive power at lowest time and computational cost."
+]
+
+# Scope
+scopeHead: "The research topics of interest to HighStream'2017 workshop include (but are not limited to) the following:"
+scope: {
+  "Foundations of learning from data streams": [
+    "Probabilistic and statistical models",
+    "Understanding the nature of learning difficulties embedded in streaming and non-stationary data",
+    "Identifying and handling concept drift",
+    "High-performance computing environments for big data streams",
+    "Deep learning with streaming data",
+    "New approaches for data pre-processing (e.g. discretization strategies)",
+    "Post-processing approaches",
+    "Sampling approaches",
+    "Feature selection and feature transformation",
+    "Evaluation in streaming domains",
+    "Online model selection",
+    "Learning for heterogeneous and multiple data streams",
+    "Context-awareness for data stream mining",
+    "Resource-aware learning from data streams",
+  ],
+  "Knowledge discovery and data mining in data streams": [
+    "Classification",
+    "Regression",
+    "Clustering",
+    "Novelty detection and evolving class structures",
+    "Learning from imbalanced data streams",
+    "Active learning and label latency",
+    "Multi-label, multi-instance, sequence and association rules mining",
+    "Graph stream mining",
+    "On-line ensemble models",
+    "Smart data mining with compact models"
+  ],
+  "Applications in solving real-life problems": [
+    "Social network applications",
+    "Medical data streams",
+    "Ubiquitous and mobile stream mining",
+    "Engineering and industrial applications",
+    "Fraud and intrusion detection",
+    "Environmental applications"
+  ]
+}
+
+# Submission and deadlines
+submission: [
+  "Paper submissions should be limited to a maximum of ten (10) pages, in the IEEE 2-column format, including the bibliography and any possible appendices. Submissions longer than 10 pages will be rejected without review. All submissions will be single-blind reviewed by the Program Committee on the basis of technical quality, relevance to scope of the workshop, originality, significance, and clarity.",
+  "Submissions should use the ICDM system for workshop papers."
+]
+deadlines: {
+  "Workshop paper submissions": "August 7, 2017",
+  "Workshop paper notifications": "September 4, 2017",
+  "Workshop final version": "",
+  "Conference": "November 18 -21, 2017"
+}
+
+# Contact
 email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
 
 # Build settings
 markdown: kramdown
-theme: minima
-gems:
-  - jekyll-feed
 exclude:
   - Gemfile
   - Gemfile.lock

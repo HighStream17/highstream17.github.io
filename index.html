@@ -1,0 +1,47 @@
+---
+---
+<!DOCTYPE html>
+<html lang="{{site.lang}}">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ site.title }}</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1>{{site.shortname}}</h1>
+    <h2>{{site.fullname}}</h2>
+    <h5>{{site.subline}}</h5>
+
+    <h5>{{site.where}}</h5>
+    <h5>{{site.when}}</h5>
+
+    <!-- Description -->
+    {% for paragraph in site.description %}
+      <p> {{ paragraph }} </p>
+    {% endfor %}
+
+    <!-- Scope -->
+    <h3> Scope of {{ site.shortname }} </h3>
+    <p> {{site.scopeHead}} </p>
+    <ul>{% for topic in site.scope %}
+      <li>{{ topic[0] }}</li>
+      <ul>{% for subtopic in topic[1] %}
+        <li>{{ subtopic }}</li>
+      {% endfor %}</ul>
+    {% endfor %}</ul>
+
+
+    <!-- Submission and deadlines -->
+    <h3> Submission and deadlines </h3>
+    {% for paragraph in site.submission %}
+      <p> {{ paragraph }} </p>
+    {% endfor %}
+
+    <ul>{% for deadline in site.deadlines %}
+      <li>{{deadline[0]}} — <strong>{{deadline[1]}}</strong></li>
+    {% endfor %}</ul>
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
+</html>
