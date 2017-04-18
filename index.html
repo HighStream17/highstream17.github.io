@@ -6,44 +6,77 @@
     <meta charset="utf-8">
     <title>{{ site.title }}</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+      body { padding-top: 70px; }
+      .primarybg {
+        background: #55AAAA; color: white;
+      }
+    </style>
   </head>
   <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">{{ site.shortname }}</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Scope</a></li>
+        <li><a href="#">Submission and deadlines</a></li>
+        <li><a href="#">Chairs</a></li>
+        <li><a href="#">Committees</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
     <div class="container">
-      <div class="text-center">
-        <h1>{{site.shortname}}</h1>
-        <h3>{{site.fullname}}</h2>
-
-        <p>{{site.subline}}</p>
-
-        <strong>{{site.where}}</strong>, {{site.when}}
+      <div class="row">
+        <div class="col-md-8">
+          <!-- Jumbotron -->
+          <div class="jumbotron text-center primarybg">
+            <h1>{{site.shortname}}</h1>
+            <h2>{{site.fullname}}</h2>
+            <p>{{site.subline}}</p>
+            <h4><strong>{{site.where}}</strong>, {{site.when}}</h4>
+          </div>
+          <!-- Description -->
+          {% for paragraph in site.description %}
+            <p class="lead"> {{ paragraph }} </p>
+          {% endfor %}
+        </div>
+        <div class="col-md-4">
+          <!-- Scope -->
+          <h3> Scope of {{ site.shortname }} </h3>
+          <p> {{site.scopeHead}} </p>
+          <ul>{% for topic in site.scope %}
+            <li>{{ topic[0] }}</li>
+            <ul>{% for subtopic in topic[1] %}
+              <li>{{ subtopic }}</li>
+            {% endfor %}</ul>
+          {% endfor %}</ul>
+          <!-- Submission and deadlines -->
+          <h3> Submission and deadlines </h3>
+          {% for paragraph in site.submission %}
+            <p> {{ paragraph }} </p>
+          {% endfor %}
+          <dl class="dl-horizontal">{% for deadline in site.deadlines %}
+            <dt>{{deadline[1]}}</dt>
+            <dd>{{deadline[0]}}</dd>
+          {% endfor %}</dl>
+        </div>
       </div>
 
-      <!-- Description -->
-      {% for paragraph in site.description %}
-        <p class="lead"> {{ paragraph }} </p>
-      {% endfor %}
-
-      <!-- Scope -->
-      <h3> Scope of {{ site.shortname }} </h3>
-      <p> {{site.scopeHead}} </p>
-      <ul>{% for topic in site.scope %}
-        <li>{{ topic[0] }}</li>
-        <ul>{% for subtopic in topic[1] %}
-          <li>{{ subtopic }}</li>
-        {% endfor %}</ul>
-      {% endfor %}</ul>
 
 
-      <!-- Submission and deadlines -->
-      <h3> Submission and deadlines </h3>
-      {% for paragraph in site.submission %}
-        <p> {{ paragraph }} </p>
-      {% endfor %}
 
-      <dl class="dl-horizontal">{% for deadline in site.deadlines %}
-        <dt>{{deadline[1]}}</dt>
-        <dd>{{deadline[0]}}</dd>
-      {% endfor %}</dl>
+
+
+
+
+
 
       <!-- Chairs -->
       <h3> Workshop Chairs </h3>
