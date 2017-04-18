@@ -11,6 +11,9 @@
       .primarybg {
         background: #55AAAA; color: white;
       }
+      h3,h5 {
+        color: #55AAAA;
+      }
     </style>
   </head>
   <body>
@@ -80,13 +83,18 @@
 
       <!-- Chairs -->
       <h3> Workshop Chairs </h3>
-      {% for person in site.chairs %}
-        <img src="photos/{{person.mail}}.png" class="img-thumbnail" width="240px">
-        <h4> {{ person.name }} </h4>
-        <h5> {{ person.affiliation }}</h5>
-        <h6> {{ person.mail }}</h6>
-        <p> {{person.bio}} </p>
-      {% endfor %}
+      <div class="row">
+        {% for person in site.chairs %}
+
+        <div class="col-md-3">
+          <img src="photos/{{person.mail}}.png" class="img-thumbnail" width="240px">
+          <h4> {{ person.name }} </h4>
+          <h5> {{ person.affiliation }}</h5>
+          <h6> {{ person.mail }}</h6>
+          <p> {{person.bio}} </p>
+        </div>
+        {% endfor %}
+      </div>
 
       <!-- Committees -->
       {% for committee in site.committees %}
