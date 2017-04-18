@@ -1,4 +1,4 @@
-title: Your awesome title
+title: High-Performance Data Stream Mining Workshop
 lang: en
 
 # Metric
@@ -67,6 +67,40 @@ deadlines: {
   "Conference": "November 18 -21, 2017"
 }
 
+# Chairs
+chairs: [
+  {
+    name: "Bartosz Krawczyk",
+    affiliation: "Department of Computer Science, Virginia Commonwealth University, USA",
+    mail: "bkrawczyk@vcu.edu",
+    bio: "Bartosz Krawczyk is an assistant professor in the Department of Computer Science, Virginia Commonwealth University, Richmond VA, USA, where he heads the Machine Learning and Stream Mining Lab. He obtained his MSc and PhD degrees from Wroclaw University of Science and Technology, Wroclaw, Poland, in 2012 and 2015 respectively. His research is focused on machine learning, data streams, class imbalance, ensemble learning, one-class classifiers, and interdisciplinary applications of these methods. He has authored 35+ international journal papers and 80+ contributions to conferences. Dr Krawczyk was awarded with numerous prestigious awards for his scientific achievements like IEEE Richard Merwin Scholarship and IEEE Outstanding Leadership Award among others. He served as a Guest Editor in four journal special issues and as a chair of ten special sessions and workshops. He is a Program Committee member for over 40 international conferences and a reviewer for 30 journals."
+  },
+  {
+    name: "Mohamed M. Gaber",
+    affiliation: "School of Computing and Digital Technology, Birmingham City University, UK",
+    mail: "mohamed.m.gaber@gmail.com",
+    bio: "Mohamed M. Gaber is a Professor in Data Analytics and the ``Data Science & Big Data Analytics'' research group leader at the School of Computing and Digital Technology, Birmingham City University. Mohamed received his PhD from Monash University, Australia. He has published over 150 papers, co-authored 2 monograph-style books, and edited/co-edited 6 books on data mining and knowledge discovery. His research interests include data stream mining, ensemble learning, and mobile data mining. Mohamed has served in the program committees of major conferences related to data mining, including ICDM, PAKDD, ECML/PKDD and ICML. He has also co-chaired numerous scientific events on various data mining topics. He is also a member of the International Panel of Expert Advisers for the Australasian Data Mining Conferences. In 2007, he was awarded the CSIRO teamwork award."
+  },
+  {
+    name: "João Gama",
+    affiliation: "Laboratory of Artificial Intelligence and Decision Support, University of Porto, Portugal",
+    mail: "joao.jgama@gmail.com",
+    bio: "João Gama received his Ph.D. in Computer Science in 2000. He is a senior researcher at INESC TEC. He has worked in several National and European projects on Incremental and Adaptive learning systems, Ubiquitous Knowledge Discovery, Learning from Massive, and Structured Data, etc. He served as Program chair at several Machine Learning and Data Mining conferences. He is author of a monography on Knowledge Discovery from Data Streams and more than 200 peer-reviewed papers in areas related to machine learning, data mining, and data streams."
+  },
+  {
+    name: "Edwin Lughofer",
+    affiliation: "Department of Knowledge-Based Mathematical Systems, Johannes Kepler University, Austria",
+    mail: "edwin.lughofer@jku.at",
+    bio: "Edwin Lughofer received his PhD-degree from the Johannes Kepler University Linz (JKU) in 2005. He is currently Key Researcher with the Fuzzy Logic Laboratorium Linz / Department of Knowledge-Based Mathematical Systems (JKU) in the Softwarepark Hagenberg, see www.flll.jku.at/staff/edwin/. He has participated in several basic and applied research projects on European and national level, with a specific focus on topics of Industry 4.0 and FoF (Factories of the Future). He has published around 170 publications in the fields of evolving fuzzy systems, machine learning and vision, data stream mining, chemometrics, active learning, classification and clustering, fault detection and diagnosis, quality control, predictive maintenance, including 60 journals papers in SCI-expanded impact journals, a monograph on ’Evolving Fuzzy Systems’ (Springer) and an edited book on ’Learning in Non-stationary Environments’ (Springer). In sum, his publications received 2900 references achieving an h-index of 33. He is associate editor of the international journals IEEE Transactions on Fuzzy Systems, Evolving Systems, Information Fusion, Soft Computing and Complex and Intelligent Systems, the general chair of the IEEE Conference on EAIS 2014 in Linz, the publication chair of IEEE EAIS 2015, 2016 and 2017, and the Area chair of the FUZZ-IEEE 2015 conference in Istanbul. He co-organized around 20 special issues and special sessions in international journals and conferences. In 2006 he received the best paper award at the International Symposium on Evolving Fuzzy Systems, in 2013 the best paper award at the IFAC conference in Manufacturing Modeling, Management and Control (800 participants) and in 2016 the best paper award at the IEEE Intelligent Systems Conference."
+  }
+]
+
+# Committees
+committees: {
+  "Program Committee": [
+    "TBA"
+  ]
+}
 # Contact
 email: your-email@domain.com
 
