@@ -67,6 +67,8 @@
           {% for paragraph in site.submission %}
             <p> {{ paragraph }} </p>
           {% endfor %}
+
+          <hr>
           <dl class="dl-horizontal">{% for deadline in site.deadlines %}
             <dt>{{deadline[1]}}</dt>
             <dd>{{deadline[0]}}</dd>
